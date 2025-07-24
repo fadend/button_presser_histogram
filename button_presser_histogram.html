@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Press the button!</title>
+  </head>
+  <body>
+    <button id="button">Press this button</button>
+    <h2>What's the distribution of button press times look like?</h2>
+    <div>Number of presses: <span id="button-press-count">0</span></div>
+    <div id="extra-stats" style="display: none">
+      Milliseconds since last press: <span id="milliseconds-timer"></span>
+      <br />
+      Last press time (milliseconds): <span id="last-time"></span>
+      <br />
+      Mean press time (milliseconds): <span id="mean-time"></span>
+    </div>
+    <div id="button-press-histogram"></div>
+    <script
+      src="https://cdn.plot.ly/plotly-3.0.1.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="button_presser_histogram.js"></script>
+  </body>
+</html>

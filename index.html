@@ -4,7 +4,9 @@
     <title>Press the button!</title>
   </head>
   <body>
-    <button id="button">Press this button</button>
+    <button id="button" style="font-size: 30pt" title="Keep on pressing it!">
+      Press this button
+    </button>
     <h2>What's the distribution of button press times look like?</h2>
     <div>Number of presses: <span id="button-press-count">0</span></div>
     <div id="extra-stats" style="display: none">
@@ -13,8 +15,12 @@
       Last press time (milliseconds): <span id="last-time"></span>
       <br />
       Mean press time (milliseconds): <span id="mean-time"></span>
+      <br />
+      Portion of your life since first press (seconds):
+      <span id="duration"></span>
     </div>
     <div id="button-press-histogram"></div>
+    <div id="button-press-timeseries"></div>
     <script
       src="https://cdn.plot.ly/plotly-3.0.1.min.js"
       charset="utf-8"
